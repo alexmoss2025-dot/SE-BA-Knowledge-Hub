@@ -442,4 +442,14 @@ document.querySelectorAll('.filter-btn').forEach(function(btn) {
   });
 });
 </script>
-</body></html>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (q) {
+    var inp = document.getElementById('glossary-search');
+    inp.value = q;
+    applyFilters();
+    inp.scrollIntoView({ block: 'center' });
+  }
+})();
+</script></body></html>
