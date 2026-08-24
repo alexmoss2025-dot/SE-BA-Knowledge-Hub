@@ -38,6 +38,7 @@
 <div class="flex items-center gap-2 text-xs text-[#87998B]"><a href="home.html" class="hover:text-[#046A38]">Home</a><i class="fa-solid fa-chevron-right text-[8px]"></i><span class="text-[#046A38] font-bold">Project Glossary</span></div>
 <h1 class="mt-3 text-[34px] font-bold text-[#204227]">Project Glossary</h1>
 <p class="mt-2 text-[#546E59]">Terms and definitions every analyst should know — searchable and filterable.</p>
+<button type="button" onclick="openSuggestModal()" class="mt-4 bg-[#046A38] hover:bg-[#04582F] text-white rounded-lg px-5 py-2.5 text-sm font-bold"><i class="fa-solid fa-circle-plus mr-2"></i>Suggest New Term</button>
 </div>
 <div class="flex gap-3 text-center">
 <div class="bg-white border border-[#E0D8CD] rounded-xl px-5 py-3"><p class="text-xl font-bold text-[#046A38]" id="stat-total">62</p><p class="text-[11px] font-bold uppercase tracking-wider text-[#87998B] mt-0.5">Total Terms</p></div>
@@ -396,7 +397,7 @@
 <section class="mt-6 bg-[#FCF8F2] border border-[#E9D1A6] rounded-xl p-5 flex items-center justify-between">
 <div><h2 class="font-bold text-[#204227]"><i class="fa-solid fa-circle-plus text-[#866D4B] mr-2"></i>Missing a term?</h2>
 <p class="mt-1 text-sm text-[#546E59]">Suggest additions or corrections so the glossary stays current for everyone.</p></div>
-<a href="#" class="bg-[#046A38] text-white rounded-lg px-5 py-3 text-sm font-bold whitespace-nowrap">Suggest a Term</a>
+<button type="button" onclick="openSuggestModal()" class="bg-[#046A38] hover:bg-[#04582F] text-white rounded-lg px-5 py-3 text-sm font-bold whitespace-nowrap">Suggest a Term</button>
 </section>
 
 </main>
@@ -405,6 +406,94 @@
 <span class="text-[#866D4B] font-bold">Shared language. Shared understanding.</span>
 </footer>
 </div></div>
+
+<!-- Suggest New Term Modal -->
+<div id="suggest-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="suggest-modal-title">
+<div class="absolute inset-0 bg-[#204227]/60" onclick="closeSuggestModal()"></div>
+<div class="relative bg-white rounded-xl shadow-2xl w-full max-w-lg border-t-4 border-[#046A38]">
+<div class="flex items-center justify-between px-6 pt-5 pb-4 border-b border-[#E0D8CD]">
+<h2 id="suggest-modal-title" class="text-lg font-bold text-[#204227]"><i class="fa-solid fa-circle-plus text-[#046A38] mr-2"></i>Suggest New Term</h2>
+<button type="button" onclick="closeSuggestModal()" class="w-8 h-8 rounded-full text-[#87998B] hover:bg-[#F7F5F2] hover:text-[#204227]" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<div class="px-6 py-5 space-y-4">
+<div>
+<label for="suggest-term" class="text-xs font-bold uppercase tracking-wider text-[#204227]">Term <span class="text-[#866D4B]">*</span></label>
+<input id="suggest-term" type="text" maxlength="120" placeholder="e.g., Change Order" class="mt-1.5 w-full bg-[#F7F5F2] border border-[#D1D3C8] rounded-lg px-4 py-2.5 text-sm outline-none focus:border-[#046A38]">
+</div>
+<div>
+<label for="suggest-definition" class="text-xs font-bold uppercase tracking-wider text-[#204227]">Definition <span class="text-[#866D4B]">*</span></label>
+<textarea id="suggest-definition" rows="4" maxlength="600" placeholder="A clear, concise definition of the term..." class="mt-1.5 w-full bg-[#F7F5F2] border border-[#D1D3C8] rounded-lg px-4 py-2.5 text-sm outline-none focus:border-[#046A38] resize-none"></textarea>
+</div>
+<div>
+<label for="suggest-category" class="text-xs font-bold uppercase tracking-wider text-[#204227]">Category <span class="text-[#866D4B]">*</span></label>
+<select id="suggest-category" class="mt-1.5 w-full bg-[#F7F5F2] border border-[#D1D3C8] rounded-lg px-4 py-2.5 text-sm outline-none focus:border-[#046A38]">
+<option value="">Select a category...</option>
+<option value="Business Analyst">Business Analyst</option>
+<option value="Company-Specific">Company-Specific</option>
+</select>
+</div>
+<p id="suggest-error" class="hidden text-xs font-bold text-[#9B2C2C]"><i class="fa-solid fa-triangle-exclamation mr-1"></i>Please complete all three fields before submitting.</p>
+<p class="text-xs text-[#87998B]">Submitting opens your email client with a pre-filled message to the glossary owner (adiamant@moss.com).</p>
+</div>
+<div class="flex justify-end gap-3 px-6 py-4 border-t border-[#E0D8CD] bg-[#F7F5F2] rounded-b-xl">
+<button type="button" onclick="closeSuggestModal()" class="border border-[#D1D3C8] text-[#546E59] rounded-lg px-5 py-2.5 text-sm font-bold hover:bg-white">Cancel</button>
+<button type="button" id="suggest-submit" onclick="submitSuggestion()" disabled class="bg-[#046A38] text-white rounded-lg px-6 py-2.5 text-sm font-bold hover:bg-[#04582F] disabled:opacity-40 disabled:cursor-not-allowed">Submit</button>
+</div>
+</div>
+</div>
+
+<script>
+function openSuggestModal() {
+  document.getElementById('suggest-modal').classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('suggest-term').focus();
+}
+function closeSuggestModal() {
+  document.getElementById('suggest-modal').classList.add('hidden');
+  document.body.style.overflow = '';
+  document.getElementById('suggest-error').classList.add('hidden');
+}
+function suggestFieldsFilled() {
+  return document.getElementById('suggest-term').value.trim() !== '' &&
+         document.getElementById('suggest-definition').value.trim() !== '' &&
+         document.getElementById('suggest-category').value !== '';
+}
+function refreshSuggestSubmit() {
+  document.getElementById('suggest-submit').disabled = !suggestFieldsFilled();
+  if (suggestFieldsFilled()) document.getElementById('suggest-error').classList.add('hidden');
+}
+['suggest-term', 'suggest-definition'].forEach(function (id) {
+  document.getElementById(id).addEventListener('input', refreshSuggestSubmit);
+});
+document.getElementById('suggest-category').addEventListener('change', refreshSuggestSubmit);
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && !document.getElementById('suggest-modal').classList.contains('hidden')) closeSuggestModal();
+});
+function submitSuggestion() {
+  if (!suggestFieldsFilled()) {
+    document.getElementById('suggest-error').classList.remove('hidden');
+    return;
+  }
+  var term = document.getElementById('suggest-term').value.trim();
+  var definition = document.getElementById('suggest-definition').value.trim();
+  var category = document.getElementById('suggest-category').value;
+  var body = 'New glossary term suggestion:\r\n\r\n' +
+             'Term: ' + term + '\r\n\r\n' +
+             'Definition: ' + definition + '\r\n\r\n' +
+             'Category: ' + category + '\r\n\r\n' +
+             'Submitted from the BA Knowledge Hub Project Glossary.';
+  var mailto = 'mailto:adiamant@moss.com' +
+               '?subject=' + encodeURIComponent('Glossary Request') +
+               '&body=' + encodeURIComponent(body);
+  window.location.href = mailto;
+  // Reset and close after handing off to the email client
+  document.getElementById('suggest-term').value = '';
+  document.getElementById('suggest-definition').value = '';
+  document.getElementById('suggest-category').value = '';
+  refreshSuggestSubmit();
+  closeSuggestModal();
+}
+</script>
 
 <script>
 var activeFilter = 'all';
