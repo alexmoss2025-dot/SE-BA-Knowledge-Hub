@@ -41,9 +41,9 @@
 <button type="button" onclick="openSuggestModal()" class="mt-4 bg-[#046A38] hover:bg-[#04582F] text-white rounded-lg px-5 py-2.5 text-sm font-bold"><i class="fa-solid fa-circle-plus mr-2"></i>Suggest New Term</button>
 </div>
 <div class="flex gap-3 text-center">
-<div class="bg-white border border-[#E0D8CD] rounded-xl px-5 py-3"><p class="text-xl font-bold text-[#046A38]" id="stat-total">62</p><p class="text-[11px] font-bold uppercase tracking-wider text-[#87998B] mt-0.5">Total Terms</p></div>
-<div class="bg-white border border-[#E0D8CD] rounded-xl px-5 py-3"><p class="text-xl font-bold text-[#046A38]">53</p><p class="text-[11px] font-bold uppercase tracking-wider text-[#87998B] mt-0.5">Business Analyst</p></div>
-<div class="bg-white border border-[#E0D8CD] rounded-xl px-5 py-3"><p class="text-xl font-bold text-[#866D4B]">9</p><p class="text-[11px] font-bold uppercase tracking-wider text-[#87998B] mt-0.5">Company-Specific</p></div>
+<div class="bg-white border border-[#E0D8CD] rounded-xl px-5 py-3"><p class="text-xl font-bold text-[#046A38]" id="stat-total">76</p><p class="text-[11px] font-bold uppercase tracking-wider text-[#87998B] mt-0.5">Total Terms</p></div>
+<div class="bg-white border border-[#E0D8CD] rounded-xl px-5 py-3"><p class="text-xl font-bold text-[#046A38]">54</p><p class="text-[11px] font-bold uppercase tracking-wider text-[#87998B] mt-0.5">Business Analyst</p></div>
+<div class="bg-white border border-[#E0D8CD] rounded-xl px-5 py-3"><p class="text-xl font-bold text-[#866D4B]">22</p><p class="text-[11px] font-bold uppercase tracking-wider text-[#87998B] mt-0.5">Company-Specific</p></div>
 </div>
 </section>
 
@@ -63,7 +63,7 @@
 <section class="mt-6 bg-white border border-[#E0D8CD] rounded-xl overflow-hidden">
 <div class="px-6 py-5 flex justify-between items-center border-b border-[#E0D8CD]">
 <div><h2 class="text-lg font-bold text-[#204227]">Terms &amp; Definitions</h2>
-<p class="text-xs text-[#87998B] mt-1"><span id="visible-count">62</span> of 62 terms shown</p></div>
+<p class="text-xs text-[#87998B] mt-1"><span id="visible-count">76</span> of <span id="total-count">76</span> terms shown</p></div>
 <span class="text-xs font-bold uppercase tracking-[.12em] text-[#866D4B]">A&ndash;Z</span>
 </div>
 <table class="w-full">
@@ -75,316 +75,82 @@
 </tr>
 </thead>
 <tbody id="glossary-body" class="divide-y divide-[#E0D8CD]">
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Acceptance Criteria</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Specific conditions that must be met for a requirement, user story, or solution to be considered complete and acceptable by stakeholders.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Agile</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">An iterative project delivery methodology focused on collaboration, customer feedback, and incremental delivery of value.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">ALM</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Application Lifecycle Management.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1 whitespace-nowrap">Company-Specific</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Assumption</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A factor considered true, real, or certain without proof for planning purposes.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Backlog</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A prioritized queue of upcoming features, user stories, and tasks managed by the team.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">BRD</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Business Requirements Document. A formal document that captures objectives, requirements, scope, assumptions, constraints, and stakeholder needs.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Business Analyst (BA)</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A professional responsible for understanding business needs, analyzing processes, documenting requirements, and helping deliver solutions that provide business value.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Business Case</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A document that justifies a project or initiative by outlining benefits, costs, risks, and expected outcomes.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Business Requirement</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A high-level statement describing what the business needs to achieve.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">CAB</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Change Advisory Board.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1 whitespace-nowrap">Company-Specific</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">CCB</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Change Control Board. A governance body responsible for reviewing, approving, rejecting, or prioritizing requested changes.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">CCB (Company)</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Change Control Board.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1 whitespace-nowrap">Company-Specific</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Change Request (CR)</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A formal request to modify scope, requirements, functionality, processes, or project deliverables.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Critical Path</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">The longest sequence of dependent tasks that must finish on time for the project to end.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Current State</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">The existing business process, workflow, system, or operating model before improvements are implemented.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Defect</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A flaw or issue in a system that causes expected results to differ from actual results.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Deliverable</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A tangible output produced during a project, such as a process map, requirements document, or test plan.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Dependency</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A task, activity, system, or resource that must be completed or available before another activity can proceed.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Discovery</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">The phase in which requirements, business objectives, stakeholders, risks, and opportunities are identified.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">End User</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">An individual who ultimately uses a system, product, service, or process.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Enhancement</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A modification that improves functionality, usability, or performance of an existing process or system.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Epic</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A large body of work that can be broken into multiple user stories or requirements.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">FHP II</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Field Handoff Procedures II Project.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1 whitespace-nowrap">Company-Specific</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Functional Requirement</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A requirement that describes what a system or solution must do.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Future State</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">The desired business process, workflow, or operating model after improvements are implemented.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Gap Analysis</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">The comparison between the current state and future state to identify gaps that must be addressed.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Go-Live</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Transition of a solution into production use.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1 whitespace-nowrap">Company-Specific</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Governance</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">The framework of processes, controls, policies, and decision-making structures used to manage work.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Hypercare</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A period immediately following deployment where additional support and monitoring are provided.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Hypercare (Company)</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Post-go-live support period focused on stabilization and issue resolution.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1 whitespace-nowrap">Company-Specific</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Impact Assessment</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">An evaluation of how a proposed change affects people, processes, technology, and operations.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">IOM</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Integrated Opportunity Management.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1 whitespace-nowrap">Company-Specific</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Issue</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A problem that currently exists and requires resolution.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">JAD</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Joint Application Development. A facilitated workshop used to gather requirements and align stakeholders on project objectives.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">KPI</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Key Performance Indicator. A measurable value used to evaluate performance against business objectives.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Lessons Learned</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Knowledge gained from project successes, challenges, and outcomes to improve future initiatives.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">MVP</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Minimum Viable Product. The smallest set of features needed to deliver value and validate a solution.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Non-Functional Requirement</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A requirement describing how a system performs rather than what it does, such as security, availability, reliability, or performance.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Operational Readiness</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">The state of preparedness required for a business to successfully adopt and support a new solution.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Oracle Fusion</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Enterprise resource planning platform used for business operations.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1 whitespace-nowrap">Company-Specific</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Process Flow</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A visual representation of activities, decisions, inputs, outputs, and responsibilities within a process.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Product Owner</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">The individual responsible for prioritizing and managing a product backlog and maximizing delivered value.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Project Scope</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">The boundaries of a project defining what is included and excluded.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">QRG</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Quick Reference Guide. A concise document providing step-by-step instructions for performing a task or process.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">RAID Log</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A project management document used to track risks, assumptions, issues, and dependencies.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Requirement</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A documented need, expectation, capability, or condition required to achieve a business objective.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Requirements Traceability Matrix (RTM)</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A document used to track requirements throughout the project lifecycle to ensure they are developed, tested, and implemented.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Risk</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A potential future event that could negatively impact objectives, timelines, budget, or quality.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Scope Creep</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">The uncontrolled expansion of project scope without proper review, approval, or governance.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">SME</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Subject Matter Expert. An individual with specialized knowledge of a business process, system, or function.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">SOP</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Standard Operating Procedure. A documented set of instructions describing how a process should be performed.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Stakeholder</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Any individual, group, or organization affected by or involved in a project, process, or solution.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Swimlane Diagram</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A process map that visually organizes activities by role, department, or responsibility area.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Test Case</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A documented set of steps, inputs, and expected results used to validate functionality.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Traceability</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">The ability to link requirements to design, development, testing, and deployment activities.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">UAT</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">User Acceptance Testing. The process in which business users validate that a solution meets requirements and is ready for production use.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">User Story</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">An Agile requirement typically written as: As a [user], I want [capability] so that [benefit].</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Validation</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Confirmation that a solution meets business needs and requirements.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Verification</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Confirmation that a solution was developed according to specifications and design requirements.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">WBS (Work Breakdown Structure)</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A hierarchical breakdown of total project work into smaller, manageable pieces.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Workshop</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">A facilitated collaborative session used to gather information, analyze processes, make decisions, or resolve issues.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1 whitespace-nowrap">Business Analyst</span></td>
-</tr>
-<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company">
-<td class="px-6 py-4 font-bold text-[#204227] align-top w-[260px]">Workstream</td>
-<td class="px-6 py-4 text-sm leading-6 text-[#546E59] align-top">Functional area within a project or program.</td>
-<td class="px-6 py-4 align-top w-[170px]"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1 whitespace-nowrap">Company-Specific</span></td>
-</tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">30% Drawing Set</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">This design milestone aims to layout major design elements of the project. This is the foundation on which the project design will sit.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">60% Drawing Set</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">After the 30% drawing set is reviewed, the incorporated revisions are published in the 60% design set. At the 60% design phase, the team should focus on reviewing for constructability and value engineering since making changes at this stage is less costly.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">90% Drawing Set</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Revisions made during the 60% design review are incorporated in the 90% design. The 90% drawing set includes all the plans and specifications for the project. Once the review and revisions are made to the 90% set, then the drawings are issued for permitting with the local AHJ.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Acceptance Criteria</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Specific conditions that must be met for a requirement, user story, or solution to be considered complete and acceptable by stakeholders.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">ADKAR Model</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A goal-oriented change management model that stands for Awareness, Desire, Knowledge, Ability, and Reinforcement.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Agile</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">An iterative project delivery methodology focused on collaboration, customer feedback, and incremental delivery of value.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">ALM</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Application Lifecycle Management.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Apprentice</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Worker enrolled in a registered apprenticeship program who is learning a skilled trade through a combination of on-the-job training (OTJ or OJT) and classroom instruction (RTI) under supervision of a journey worker or master craftsperson.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Array</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A group of solar panels wired together to create an electrical power output.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">As-Built Drawings</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The final drawings and final technical specifications for the work performed, as revised to reflect changes made during construction, and include with reasonable detail the physical placement of equipment, underground structures such as buried piping and utilities, electric one lines, electric schematics and connection diagrams.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Assumption</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A factor considered true, real, or certain without proof for planning purposes.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Backlog</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A prioritized queue of upcoming features, user stories, and tasks managed by the team.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Basis of Bid</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A document that includes the preliminary site design and outlines the qualifications and assumptions that the design and bid was based on.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Basis of Design</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A document formed from the Basis of Bid (BoB) and includes comments made by client and forms the foundation of the detail design and engineering phase.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Battery Energy Storage System (BESS)</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A unit that will consist of multiple Battery units, nested within racks internally, to store power for later usage. Power is stored as DC. A BESS system is used to balance the energy grid by storing surplus energy generated by a plant to release to the grid when less power is produced.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Bill of Materials (BOM)</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A comprehensive list of all the materials or components needed to construct a product or system.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">BRD</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Business Requirements Document. A formal document that captures objectives, requirements, scope, assumptions, constraints, and stakeholder needs.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Business Analyst (BA)</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A professional responsible for understanding business needs, analyzing processes, documenting requirements, and helping deliver solutions that provide business value.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Business Case</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A document that justifies a project or initiative by outlining benefits, costs, risks, and expected outcomes.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Business Requirement</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A high-level statement describing what the business needs to achieve.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">CAB</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Change Advisory Board.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">CCB</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Change Control Board. A governance body responsible for reviewing, approving, rejecting, or prioritizing requested changes.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">CCB (Company)</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Change Control Board.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Change Request (CR)</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A formal request to modify scope, requirements, functionality, processes, or project deliverables.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Critical Path</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The longest sequence of dependent tasks that must finish on time for the project to end.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Culvert</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A structure, typically a pipe or box, that allows water to flow under a road, or other obstruction, acting as a drain or waterway crossing.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Current State</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The existing business process, workflow, system, or operating model before improvements are implemented.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Defect</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A flaw or issue in a system that causes expected results to differ from actual results.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Deliverable</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A tangible output produced during a project, such as a process map, requirements document, or test plan.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Dependency</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A task, activity, system, or resource that must be completed or available before another activity can proceed.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Discovery</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The phase in which requirements, business objectives, stakeholders, risks, and opportunities are identified.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">End User</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">An individual who ultimately uses a system, product, service, or process.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Enhancement</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A modification that improves functionality, usability, or performance of an existing process or system.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Epic</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A large body of work that can be broken into multiple user stories or requirements.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">FHP II</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Field Handoff Procedures II Project.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Functional Requirement</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A requirement that describes what a system or solution must do.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Future State</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The desired business process, workflow, or operating model after improvements are implemented.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Gap Analysis</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The comparison between the current state and future state to identify gaps that must be addressed.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Go-Live</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Transition of a solution into production use.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Governance</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The framework of processes, controls, policies, and decision-making structures used to manage work.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Hypercare</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A period immediately following deployment where additional support and monitoring are provided.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Hypercare (Company)</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Post-go-live support period focused on stabilization and issue resolution.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Impact Assessment</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">An evaluation of how a proposed change affects people, processes, technology, and operations.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">IOM</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Integrated Opportunity Management.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">IRA Compliance</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">IRA Compliance refers to adherence to the labor and wage requirements set forth in the Inflation Reduction Act (IRA), which applies to certain federally supported energy projects. To qualify for enhanced tax credits or incentives under the IRA, contractors and subcontractors must meet specific labor-related standards.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Issue</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A problem that currently exists and requires resolution.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">JAD</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Joint Application Development. A facilitated workshop used to gather requirements and align stakeholders on project objectives.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">KPI</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Key Performance Indicator. A measurable value used to evaluate performance against business objectives.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Lessons Learned</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Knowledge gained from project successes, challenges, and outcomes to improve future initiatives.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">MVP</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Minimum Viable Product. The smallest set of features needed to deliver value and validate a solution.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Non-Functional Requirement</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A requirement describing how a system performs rather than what it does, such as security, availability, reliability, or performance.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Operational Readiness</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The state of preparedness required for a business to successfully adopt and support a new solution.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Oracle Fusion</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Enterprise resource planning platform used for business operations.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Plan of the Day (POD)</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A document sent to the client daily that reflects the previous day&#x27;s actuals and plans the current day&#x27;s activities.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Process Flow</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A visual representation of activities, decisions, inputs, outputs, and responsibilities within a process.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Product Owner</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The individual responsible for prioritizing and managing a product backlog and maximizing delivered value.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Project Scope</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The boundaries of a project defining what is included and excluded.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">QRG</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Quick Reference Guide. A concise document providing step-by-step instructions for performing a task or process.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">RAID Log</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A project management document used to track risks, assumptions, issues, and dependencies.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Requirement</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A documented need, expectation, capability, or condition required to achieve a business objective.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Requirements Traceability Matrix (RTM)</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A document used to track requirements throughout the project lifecycle to ensure they are developed, tested, and implemented.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Risk</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A potential future event that could negatively impact objectives, timelines, budget, or quality.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Scope Creep</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The uncontrolled expansion of project scope without proper review, approval, or governance.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">SME</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Subject Matter Expert. An individual with specialized knowledge of a business process, system, or function.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">SOP</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Standard Operating Procedure. A documented set of instructions describing how a process should be performed.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Stakeholder</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Any individual, group, or organization affected by or involved in a project, process, or solution.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Swimlane Diagram</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A process map that visually organizes activities by role, department, or responsibility area.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Test Case</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A documented set of steps, inputs, and expected results used to validate functionality.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Traceability</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">The ability to link requirements to design, development, testing, and deployment activities.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">UAT</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">User Acceptance Testing. The process in which business users validate that a solution meets requirements and is ready for production use.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">User Story</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">An Agile requirement typically written as: As a [user], I want [capability] so that [benefit].</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Validation</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Confirmation that a solution meets business needs and requirements.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Verification</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Confirmation that a solution was developed according to specifications and design requirements.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">WBS (Work Breakdown Structure)</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A hierarchical breakdown of total project work into smaller, manageable pieces.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="ba"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Workshop</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">A facilitated collaborative session used to gather information, analyze processes, make decisions, or resolve issues.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#EEF0EE] text-[#046A38] rounded-full px-3 py-1">Business Analyst</span></td></tr>
+<tr class="glossary-row hover:bg-[#F7F5F2]" data-category="company"><td class="px-5 py-4 align-top w-[200px] text-sm font-bold text-[#204227]">Workstream</td><td class="px-5 py-4 align-top text-sm text-[#546E59]">Functional area within a project or program.</td><td class="px-5 py-4 align-top w-[160px] text-right"><span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-[#FCF8F2] text-[#866D4B] rounded-full px-3 py-1">Company-Specific</span></td></tr>
 </tbody>
 </table>
 <div id="no-results" class="hidden px-6 py-14 text-center">
@@ -511,6 +277,7 @@ function applyFilters() {
     if (show) visible++;
   });
   document.getElementById('visible-count').textContent = visible;
+  document.getElementById('total-count').textContent = rows.length;
   document.getElementById('no-results').classList.toggle('hidden', visible > 0);
   document.getElementById('clear-search').classList.toggle('hidden', !q);
 }
