@@ -1,0 +1,398 @@
+[
+ {
+  "slug": "change-control",
+  "header": {
+   "eyebrow": "Visual Process Map",
+   "subtitle": "Governance · Future State"
+  },
+  "crumb": "Requirements Change Control",
+  "status": "Future State",
+  "title": "Requirements Change Control",
+  "summary": "How changes to already-approved requirements are requested, assessed for impact, approved or rejected, and documented to maintain traceability and prevent scope creep.",
+  "overview": [
+   "This map illustrates the lightweight change control process that governs modifications to baseline requirements after stakeholder approval. It ensures every change is evaluated for impact on scope, schedule, budget, and risk before being accepted — preventing uncontrolled scope creep while remaining agile enough to accommodate legitimate business needs.",
+   "Use this map to train project teams on change management, explain to stakeholders why a requested change requires approval, or design process improvements for faster turnaround on low-risk changes."
+  ],
+  "mermaid": "graph TD\n    A[Change Request Submitted] -->|By Stakeholder or BA| B[BA Logs Change Request]\n    B --> C[Review Against Baseline]\n    C --> D[Conduct Impact Analysis]\n    D --> E{Impact Level?}\n    E -->|Low: Minor wording or clarification| F[BA Approves]\n    E -->|Medium: Moderate scope/effort change| G[Present to Sponsor]\n    E -->|High: Significant scope, schedule, or budget impact| H[Present to Change Control Board]\n    F --> I[Update Requirements Doc]\n    G --> J{Sponsor Decision?}\n    J -->|Approved| I\n    J -->|Rejected| K[Notify Requestor with Rationale]\n    H --> L{CCB Decision?}\n    L -->|Approved| M[Update Project Plan & Budget]\n    L -->|Rejected| K\n    L -->|Deferred| N[Park for Future Phase]\n    M --> I\n    I --> O[Update Traceability Matrix]\n    O --> P[Notify All Stakeholders]\n    K --> P\n    N --> P\n    P --> Q[Archive Change Record]\n    \n    style A fill:#EEF0EE,stroke:#866D4B,stroke-width:2px\n    style F fill:#EEF0EE,stroke:#046A38,stroke-width:2px\n    style J fill:#FCF8F2,stroke:#866D4B,stroke-width:2px\n    style L fill:#FCF8F2,stroke:#866D4B,stroke-width:2px\n    style I fill:#204227,stroke:#866D4B,stroke-width:2px,color:#fff\n    style K fill:#F3F4F1,stroke:#866D4B,stroke-width:2px\n    style N fill:#F3F4F1,stroke:#866D4B,stroke-width:2px\n    style Q fill:#EEF0EE,stroke:#046A38,stroke-width:2px",
+  "roles": [
+   {
+    "role": "Change Requestor",
+    "description": "Submits the change request, explains the business justification, and clarifies the desired outcome."
+   },
+   {
+    "role": "Business Analyst",
+    "description": "Logs the request, conducts impact analysis, determines approval path, and updates all documentation."
+   },
+   {
+    "role": "Project Sponsor",
+    "description": "Approves or rejects medium-impact changes and attends the Change Control Board for high-impact items."
+   },
+   {
+    "role": "Change Control Board (CCB)",
+    "description": "Cross-functional group (sponsor, PM, technical lead, BA) that decides on high-impact changes based on portfolio fit and resource availability."
+   },
+   {
+    "role": "Project Manager",
+    "description": "Assesses schedule and budget impact, attends CCB meetings, and updates the project plan after approved changes."
+   },
+   {
+    "role": "Technical Lead",
+    "description": "Evaluates technical feasibility, effort, and risk for proposed changes."
+   }
+  ],
+  "related": [
+   {
+    "href": "/sop-library/requirements-change-control",
+    "icon": "book",
+    "title": "SOP: Requirements Change Control",
+    "sub": "Detailed procedure for this process"
+   },
+   {
+    "href": "/ba-templates",
+    "icon": "file-lines",
+    "title": "Change Request Form",
+    "sub": "Standard change request template"
+   },
+   {
+    "href": "/ai-toolkit/prompts/requirement-quality",
+    "icon": "wand-magic-sparkles",
+    "title": "Requirement Quality Check",
+    "sub": "AI prompt for requirements review"
+   },
+   {
+    "href": "/glossary",
+    "icon": "spell-check",
+    "title": "Glossary: Baseline, Scope Creep, Traceability",
+    "sub": "Key term definitions"
+   }
+  ],
+  "details": [
+   {
+    "label": "Domain",
+    "value": "Governance"
+   },
+   {
+    "label": "State",
+    "value": "Future State"
+   },
+   {
+    "label": "Owner",
+    "value": "BA Practice Lead"
+   },
+   {
+    "label": "Steps",
+    "value": "8"
+   },
+   {
+    "label": "Roles",
+    "value": "6"
+   },
+   {
+    "label": "Last Reviewed",
+    "value": "Aug. 15, 2026"
+   },
+   {
+    "label": "Systems",
+    "value": "Requirements Management Tool"
+   }
+  ],
+  "note": "See a gap or have a suggestion? Use the <strong>Submit a Map</strong> button on the Process Maps page."
+ },
+ {
+  "slug": "request-intake",
+  "header": {
+   "eyebrow": "Visual Process Map",
+   "subtitle": "Enterprise Systems · Current State"
+  },
+  "crumb": "Request Intake to Prioritization",
+  "status": "Approved",
+  "title": "Business Request Intake to Prioritization",
+  "summary": "How new business requests move from submission through evaluation, scoring, and prioritization committee review to final placement on the roadmap or backlog.",
+  "overview": [
+   "This map shows the end-to-end flow from when a business request is submitted by a stakeholder through the evaluation, scoring, and prioritization steps that place it into the active roadmap, backlog, or parking lot. The process ensures every request receives a fair, transparent assessment and that high-value, high-urgency work surfaces to the top.",
+   "Use this map when onboarding new stakeholders to the intake process, explaining why requests may be deferred, or designing improvements to the prioritization workflow."
+  ],
+  "mermaid": "graph TD\n    A[Request Submitted] -->|Intake Form or Email| B[BA Logs Request]\n    B --> C{Complete Info?}\n    C -->|No| D[Request Clarification]\n    D --> A\n    C -->|Yes| E[Assign to BA for Review]\n    E --> F[Initial Screening & Discovery]\n    F --> G[Draft Intake Summary]\n    G --> H{Meets Criteria?}\n    H -->|No - Out of Scope| I[Redirect or Decline]\n    H -->|Yes| J[Score: Value + Effort + Risk]\n    J --> K[Present to Prioritization Committee]\n    K --> L{Decision?}\n    L -->|Approved - High Priority| M[Add to Active Roadmap]\n    L -->|Approved - Lower Priority| N[Add to Backlog]\n    L -->|Deferred| O[Park with Rationale]\n    L -->|Declined| P[Close with Feedback]\n    M --> Q[Notify Stakeholders]\n    N --> Q\n    O --> Q\n    P --> Q\n    I --> Q\n    Q --> R[Update Portfolio Tracker]\n    \n    style A fill:#EEF0EE,stroke:#866D4B,stroke-width:2px\n    style M fill:#204227,stroke:#866D4B,stroke-width:2px,color:#fff\n    style N fill:#FCF8F2,stroke:#866D4B,stroke-width:2px\n    style O fill:#F3F4F1,stroke:#866D4B,stroke-width:2px\n    style P fill:#F3F4F1,stroke:#866D4B,stroke-width:2px\n    style I fill:#F3F4F1,stroke:#866D4B,stroke-width:2px\n    style R fill:#EEF0EE,stroke:#046A38,stroke-width:2px",
+  "roles": [
+   {
+    "role": "Requestor / Sponsor",
+    "description": "Submits the request, clarifies the business problem, and commits to funding and championing the work if approved."
+   },
+   {
+    "role": "Business Analyst",
+    "description": "Logs the request, runs discovery, drafts the intake summary, and scores value/effort/risk."
+   },
+   {
+    "role": "BA Practice Lead",
+    "description": "Reviews scoring, assigns analysts, and facilitates the prioritization committee."
+   },
+   {
+    "role": "Prioritization Committee",
+    "description": "Regional/BU leaders who make the final roadmap vs. backlog vs. defer decision based on portfolio fit and capacity."
+   },
+   {
+    "role": "PMO",
+    "description": "Registers approved initiatives that meet the project threshold and links them to the portfolio tracker."
+   },
+   {
+    "role": "Enterprise Systems",
+    "description": "Maintains the intake form, portfolio tracker, and automated notifications to stakeholders."
+   }
+  ],
+  "related": [
+   {
+    "href": "/sop-library/project-discovery",
+    "icon": "book",
+    "title": "SOP: Project Discovery and Intake",
+    "sub": "Detailed procedure for this process"
+   },
+   {
+    "href": "/ba-templates",
+    "icon": "file-lines",
+    "title": "Intake Summary Template",
+    "sub": "One-page intake summary format"
+   },
+   {
+    "href": "/ai-toolkit/workflows/stakeholder",
+    "icon": "wand-magic-sparkles",
+    "title": "Stakeholder Analysis Accelerator",
+    "sub": "AI-guided stakeholder mapping"
+   },
+   {
+    "href": "/glossary",
+    "icon": "spell-check",
+    "title": "Glossary: Backlog, Roadmap, Business Case",
+    "sub": "Key term definitions"
+   }
+  ],
+  "details": [
+   {
+    "label": "Domain",
+    "value": "Enterprise Systems"
+   },
+   {
+    "label": "State",
+    "value": "Current State"
+   },
+   {
+    "label": "Owner",
+    "value": "Product Operations"
+   },
+   {
+    "label": "Steps",
+    "value": "11"
+   },
+   {
+    "label": "Roles",
+    "value": "6"
+   },
+   {
+    "label": "Last Reviewed",
+    "value": "July 30, 2026"
+   },
+   {
+    "label": "Systems",
+    "value": "Work Management, Teams"
+   }
+  ],
+  "note": "See a gap or have a suggestion? Use the <strong>Submit a Map</strong> button on the Process Maps page."
+ },
+ {
+  "slug": "system-access",
+  "header": {
+   "eyebrow": "Visual Process Map",
+   "subtitle": "Technology · Current State"
+  },
+  "crumb": "System Access Request",
+  "status": "Approved",
+  "title": "System Access Request",
+  "summary": "How Business Analysts and team members request access to systems, applications, and data sources — from submission through manager approval, security review, provisioning, and confirmation.",
+  "overview": [
+   "This map outlines the system access request workflow that ensures proper authorization, security review, and audit trail for every access grant. The process balances speed (getting people productive quickly) with control (preventing unauthorized access and maintaining compliance).",
+   "Use this map when onboarding new BAs or project team members, explaining access delays to stakeholders, or auditing existing permissions against approved requests."
+  ],
+  "mermaid": "graph TD\n    A[Team Member Needs Access] -->|Submit Request via Portal| B[IT Logs Access Request]\n    B --> C[Route to Manager]\n    C --> D{Manager Approval?}\n    D -->|Rejected| E[Notify Requestor with Reason]\n    D -->|Approved| F[Route to Security Review]\n    F --> G{Security Assessment}\n    G -->|Standard Access - Low Risk| H[Auto-Approve]\n    G -->|Elevated Access - High Risk| I[Manual Security Review]\n    I --> J{Security Decision?}\n    J -->|Approved| K[Log Approval & Justification]\n    J -->|Rejected| L[Return to Manager with Recommendation]\n    L --> M[Manager Resubmits or Cancels]\n    M --> F\n    H --> K\n    K --> N[Assign to Provisioning Team]\n    N --> O[Create Account & Assign Permissions]\n    O --> P[Test Access in Non-Prod]\n    P --> Q{Access Working?}\n    Q -->|No| R[Troubleshoot & Retry]\n    R --> P\n    Q -->|Yes| S[Notify Requestor & Manager]\n    S --> T[Requestor Confirms Access]\n    T --> U[Close Request in Tracker]\n    E --> U\n    \n    style A fill:#EEF0EE,stroke:#866D4B,stroke-width:2px\n    style D fill:#FCF8F2,stroke:#866D4B,stroke-width:2px\n    style J fill:#FCF8F2,stroke:#866D4B,stroke-width:2px\n    style O fill:#204227,stroke:#866D4B,stroke-width:2px,color:#fff\n    style E fill:#F3F4F1,stroke:#866D4B,stroke-width:2px\n    style L fill:#F3F4F1,stroke:#866D4B,stroke-width:2px\n    style U fill:#EEF0EE,stroke:#046A38,stroke-width:2px",
+  "roles": [
+   {
+    "role": "Requestor (BA or Team Member)",
+    "description": "Submits the access request via the IT portal, specifies the system/role needed, and provides business justification."
+   },
+   {
+    "role": "Manager / Supervisor",
+    "description": "Reviews and approves or rejects the request based on role fit and business need. Accountable for access granted to their team."
+   },
+   {
+    "role": "Security / Compliance Team",
+    "description": "Assesses risk level, reviews elevated permissions, enforces least-privilege principles, and maintains the audit trail."
+   },
+   {
+    "role": "IT Service Desk",
+    "description": "Logs the initial request, routes it through approvals, and tracks status to SLA."
+   },
+   {
+    "role": "Provisioning Team (IT / System Admins)",
+    "description": "Creates accounts, assigns permissions, tests access, and notifies the requestor when ready."
+   },
+   {
+    "role": "System Owner / Data Steward",
+    "description": "For sensitive systems, provides additional approval and defines appropriate access levels for each role."
+   }
+  ],
+  "related": [
+   {
+    "href": "/ba-templates",
+    "icon": "file-lines",
+    "title": "Access Request Form",
+    "sub": "Standard request template"
+   },
+   {
+    "href": "/onboarding",
+    "icon": "compass",
+    "title": "New BA Onboarding Resources",
+    "sub": "System access checklist for new hires"
+   },
+   {
+    "href": "/glossary",
+    "icon": "spell-check",
+    "title": "Glossary: RBAC, Least Privilege, Data Steward",
+    "sub": "Key security and access terms"
+   },
+   {
+    "href": "/sop-library",
+    "icon": "book",
+    "title": "SOP Library",
+    "sub": "Related IT and security procedures"
+   }
+  ],
+  "details": [
+   {
+    "label": "Domain",
+    "value": "Technology"
+   },
+   {
+    "label": "State",
+    "value": "Current State"
+   },
+   {
+    "label": "Owner",
+    "value": "IT Service Management"
+   },
+   {
+    "label": "Steps",
+    "value": "7"
+   },
+   {
+    "label": "Roles",
+    "value": "6"
+   },
+   {
+    "label": "Last Reviewed",
+    "value": "Aug. 20, 2026"
+   },
+   {
+    "label": "Systems",
+    "value": "IT Service Portal, IAM Platform"
+   }
+  ],
+  "note": "See a gap or have a suggestion? Use the <strong>Submit a Map</strong> button on the Process Maps page."
+ },
+ {
+  "slug": "uat",
+  "header": {
+   "eyebrow": "Visual Process Map",
+   "subtitle": "Testing · Current State"
+  },
+  "crumb": "UAT Planning and Signoff",
+  "status": "Approved",
+  "title": "UAT Planning and Signoff",
+  "summary": "How User Acceptance Testing is planned, test cases are prepared, execution is coordinated with stakeholders, defects are logged and resolved, and formal stakeholder signoff is obtained before go-live.",
+  "overview": [
+   "This map traces the User Acceptance Testing lifecycle from planning through final signoff. UAT is the business stakeholders' last opportunity to validate that the solution meets their needs before it goes live — the process ensures structured test execution, clear defect resolution criteria, and documented acceptance.",
+   "Use this map when planning a UAT cycle, training business users on their testing responsibilities, or explaining to sponsors why UAT signoff is a required gate before deployment."
+  ],
+  "mermaid": "graph TD\n    A[Requirements Approved & Dev Complete] --> B[BA Drafts UAT Plan]\n    B --> C[Identify Test Scenarios & Cases]\n    C --> D[Map Scenarios to Requirements]\n    D --> E[Recruit Business Testers]\n    E --> F[Prepare Test Environment]\n    F --> G[Conduct UAT Kickoff]\n    G --> H[Execute Test Cases]\n    H --> I{Defects Found?}\n    I -->|Yes| J[Log Defects in Tracker]\n    J --> K{Severity?}\n    K -->|Critical/High: Blocks UAT| L[Dev Team Fixes & Redeploys]\n    K -->|Medium/Low: Does not block| M[Log for Future Sprint]\n    L --> N[Retest Fixed Defects]\n    N --> H\n    M --> H\n    I -->|No - All Tests Pass| O[Document Test Results]\n    O --> P[BA Reviews Coverage]\n    P --> Q{All Scenarios Covered?}\n    Q -->|No| H\n    Q -->|Yes| R[Prepare Signoff Document]\n    R --> S[Present Results to Stakeholders]\n    S --> T{Stakeholder Decision?}\n    T -->|Approved - Ready for Go-Live| U[Formal Signoff Obtained]\n    T -->|Conditional Approval| V[Document Conditions & Workarounds]\n    T -->|Rejected| W[Identify Gaps & Replan]\n    U --> X[Handoff to Deployment Team]\n    V --> X\n    W --> C\n    \n    style A fill:#EEF0EE,stroke:#866D4B,stroke-width:2px\n    style H fill:#FCF8F2,stroke:#866D4B,stroke-width:2px\n    style J fill:#F3F4F1,stroke:#D06951,stroke-width:2px\n    style L fill:#FCF8F2,stroke:#866D4B,stroke-width:2px\n    style U fill:#204227,stroke:#866D4B,stroke-width:2px,color:#fff\n    style X fill:#EEF0EE,stroke:#046A38,stroke-width:2px\n    style W fill:#F3F4F1,stroke:#866D4B,stroke-width:2px",
+  "roles": [
+   {
+    "role": "Business Analyst",
+    "description": "Drafts the UAT plan, creates test scenarios, coordinates execution, logs and tracks defects, and prepares the signoff document."
+   },
+   {
+    "role": "Business Testers / SMEs",
+    "description": "Execute test cases in the test environment, validate business logic, and report any issues or unexpected behavior."
+   },
+   {
+    "role": "Project Sponsor",
+    "description": "Reviews test results, assesses readiness, and provides formal signoff or conditional approval for go-live."
+   },
+   {
+    "role": "Development Team",
+    "description": "Fixes critical and high-severity defects during UAT, redeploys to the test environment, and supports testers with questions."
+   },
+   {
+    "role": "Project Manager",
+    "description": "Schedules UAT milestones, coordinates environment readiness, and tracks defect resolution against the project timeline."
+   },
+   {
+    "role": "Deployment / DevOps Team",
+    "description": "Receives the signoff package and executes the production deployment after UAT approval."
+   }
+  ],
+  "related": [
+   {
+    "href": "/sop-library/uat-planning",
+    "icon": "book",
+    "title": "SOP: UAT Planning and Execution",
+    "sub": "Detailed procedure for this process"
+   },
+   {
+    "href": "/ba-templates",
+    "icon": "file-lines",
+    "title": "UAT Plan & Test Case Templates",
+    "sub": "Standard UAT planning documents"
+   },
+   {
+    "href": "/ai-toolkit/workflows/uat",
+    "icon": "wand-magic-sparkles",
+    "title": "UAT Test Case Generator",
+    "sub": "AI workflow for test scenario creation"
+   },
+   {
+    "href": "/glossary",
+    "icon": "spell-check",
+    "title": "Glossary: UAT, Test Scenario, Signoff",
+    "sub": "Key term definitions"
+   }
+  ],
+  "details": [
+   {
+    "label": "Domain",
+    "value": "Testing"
+   },
+   {
+    "label": "State",
+    "value": "Current State"
+   },
+   {
+    "label": "Owner",
+    "value": "BA Practice Lead"
+   },
+   {
+    "label": "Steps",
+    "value": "10"
+   },
+   {
+    "label": "Roles",
+    "value": "6"
+   },
+   {
+    "label": "Last Reviewed",
+    "value": "Sept. 1, 2026"
+   },
+   {
+    "label": "Systems",
+    "value": "Defect Tracker, Test Environment"
+   }
+  ],
+  "note": "See a gap or have a suggestion? Use the <strong>Submit a Map</strong> button on the Process Maps page."
+ }
+]

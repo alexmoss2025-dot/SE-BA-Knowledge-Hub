@@ -1,0 +1,122 @@
+[
+ {
+  "slug": "process-discovery",
+  "header": {
+   "eyebrow": "AI Toolkit",
+   "subtitle": "Guided AI Workflow — 20 minutes"
+  },
+  "eyebrow": "Guided AI Workflow",
+  "title": "Process Discovery Synthesizer",
+  "lede": "Turn scattered interview notes and observations into a structured view of a business process. This workflow guides you through organizing raw inputs into steps, actors, systems, decision points, and gaps.",
+  "duration": "20 min",
+  "stages": [
+   {
+    "title": "Extract Process Steps",
+    "time": "~7 min",
+    "description": "Feed your raw notes into MossAIc and ask it to identify the sequential steps in the process.",
+    "prompt": "I am a Business Analyst documenting a business process. Here are my raw notes from stakeholder interviews and observations:\n\n[Paste your notes here]\n\nExtract a numbered list of process steps in chronological order. For each step, identify:\n- **Step name** (short, action-oriented)\n- **Actor** (who performs it)\n- **System/tool** (if any)\n- **Input** (what triggers or feeds this step)\n- **Output** (what it produces)\n\nFlag any steps where the notes are ambiguous or contradictory."
+   },
+   {
+    "title": "Identify Decision Points & Branches",
+    "time": "~6 min",
+    "description": "Ask MossAIc to find the decision points, branches, and exception paths within the extracted steps.",
+    "prompt": "Here is the process step list:\n[Paste the output from Stage 1]\n\nIdentify:\n1. **Decision points** — where does the process branch based on a condition?\n2. **Exception paths** — what happens when something goes wrong or an edge case occurs?\n3. **Loops** — are any steps repeated under certain conditions?\n4. **Handoffs** — where does responsibility transfer between people or teams?\n\nFor each, describe the condition and the alternate path. Suggest where I should validate with stakeholders."
+   },
+   {
+    "title": "Surface Gaps & Pain Points",
+    "time": "~4 min",
+    "description": "Have MossAIc analyze the process for inefficiencies, risks, and undocumented areas.",
+    "prompt": "Based on this process documentation:\n[Paste outputs from Stages 1 and 2]\n\nAnalyze for:\n1. **Gaps** — steps that seem to be missing or poorly defined\n2. **Redundancies** — duplicated effort or unnecessary handoffs\n3. **Manual workarounds** — steps that could be automated or streamlined\n4. **Risk points** — where errors, delays, or data loss are most likely\n5. **Undocumented areas** — parts of the process that need further investigation\n\nPresent as a findings table with: Issue, Location (step #), Impact (High/Medium/Low), and Recommended Action."
+   },
+   {
+    "title": "Generate Process Summary",
+    "time": "~3 min",
+    "description": "Produce a clean process summary suitable for documentation or stakeholder review.",
+    "prompt": "Using all the analysis above, generate:\n1. A **process overview paragraph** (3-4 sentences suitable for a BRD or process document)\n2. A **simplified step list** (happy path only, suitable for a process map)\n3. A **key metrics suggestion** — what should be measured to track this process's health?\n\nKeep the language clear and jargon-free so non-technical stakeholders can review it."
+   }
+  ],
+  "whatYouNeed": [
+   "Interview notes, observation logs, or free-text descriptions of the current process",
+   "Names of the systems or tools involved (if known)",
+   "Any existing process documentation (even outdated versions help)"
+  ],
+  "expectedOutput": "A structured process document with steps, actors, systems, decision points, gaps analysis, and a clean summary — ready for stakeholder validation or as input to a formal process map.",
+  "remember": "Always remove confidential details before prompting. Review every AI output — you own the final deliverable."
+ },
+ {
+  "slug": "stakeholder",
+  "header": {
+   "eyebrow": "AI Toolkit",
+   "subtitle": "Guided AI Workflow — 15 minutes"
+  },
+  "eyebrow": "Guided AI Workflow",
+  "title": "Stakeholder Analysis Accelerator",
+  "lede": "A repeatable workflow that combines MossAIc with proven BA practice to map who matters, what they need, and how to engage them — in about 15 minutes instead of hours.",
+  "duration": "15 min",
+  "stages": [
+   {
+    "title": "Identify & Categorize",
+    "time": "~5 min",
+    "description": "List your known stakeholders and ask MossAIc to suggest missing roles based on the project type.",
+    "prompt": "I am a Business Analyst starting stakeholder analysis for [project name/description]. Here are the stakeholders I have identified so far:\n[List names/roles]\n\nSuggest additional stakeholder roles I may be missing based on this type of initiative. For each suggestion, explain why they should be included."
+   },
+   {
+    "title": "Map Influence & Interest",
+    "time": "~5 min",
+    "description": "For each stakeholder, assess their level of influence over the project and their level of interest in its outcome.",
+    "prompt": "Here is my stakeholder list for [project name]:\n[Full stakeholder list]\n\nFor each stakeholder, assess:\n- **Influence** (High/Medium/Low) — their power to affect project decisions\n- **Interest** (High/Medium/Low) — how much the outcome affects them\n- **Disposition** (Champion / Supporter / Neutral / Resistant)\n\nPresent as a table and recommend a quadrant placement (Manage Closely / Keep Satisfied / Keep Informed / Monitor)."
+   },
+   {
+    "title": "Plan Engagement",
+    "time": "~5 min",
+    "description": "Generate a tailored engagement approach for each stakeholder based on their quadrant placement.",
+    "prompt": "Based on this stakeholder analysis:\n[Paste the table from Stage 2]\n\nFor each stakeholder, recommend:\n1. **Communication frequency** (weekly, biweekly, monthly, as-needed)\n2. **Preferred format** (1:1 meeting, email update, steering committee, workshop)\n3. **Key message focus** — what matters most to this person\n4. **Risk to manage** — what could go wrong if this stakeholder is under-engaged\n\nPresent as an engagement plan table I can include in my project documentation."
+   }
+  ],
+  "whatYouNeed": [
+   "A project name or initiative description",
+   "A rough list of stakeholder names or roles (even partial is fine)",
+   "Any known concerns, priorities, or political dynamics"
+  ],
+  "expectedOutput": "A stakeholder register with influence/interest mapping and a tailored engagement plan — ready to drop into your project documentation or share with your project manager.",
+  "remember": "Always remove confidential details before prompting. Review every AI output — you own the final deliverable."
+ },
+ {
+  "slug": "uat",
+  "header": {
+   "eyebrow": "AI Toolkit",
+   "subtitle": "Guided AI Workflow — 15 minutes"
+  },
+  "eyebrow": "Guided AI Workflow",
+  "title": "UAT Scenario Builder",
+  "lede": "Draft business-focused user acceptance test scenarios directly from approved requirements, so testing validates what the business actually asked for — not just what was built.",
+  "duration": "15 min",
+  "stages": [
+   {
+    "title": "Generate Happy-Path Scenarios",
+    "time": "~5 min",
+    "description": "Start with the core scenarios that validate the primary requirements under normal conditions.",
+    "prompt": "I am a Business Analyst creating UAT scenarios. Here are the approved requirements:\n\n[Paste requirements or user stories with acceptance criteria]\n\nFor each requirement, generate UAT test scenarios that cover the happy path (normal, expected usage). For each scenario include:\n- **Scenario ID** (e.g., UAT-001)\n- **Scenario name**\n- **User role** performing the test\n- **Preconditions**\n- **Step-by-step actions** (written from the user's perspective, not technical)\n- **Expected result**\n\nWrite in business language that a non-technical tester can follow."
+   },
+   {
+    "title": "Add Edge Cases & Negative Tests",
+    "time": "~5 min",
+    "description": "Expand coverage with boundary conditions, error scenarios, and exception paths.",
+    "prompt": "Here are the happy-path UAT scenarios:\n[Paste output from Stage 1]\n\nNow generate additional scenarios for:\n1. **Boundary conditions** — minimum/maximum values, empty fields, character limits\n2. **Error handling** — what happens when the user does something unexpected?\n3. **Business rule validation** — scenarios that test specific business rules or constraints\n4. **Permission/role-based tests** — what should different user roles see or not see?\n5. **Data scenarios** — edge cases in data (duplicates, special characters, large volumes)\n\nUse the same format as the happy-path scenarios. Flag which requirement each scenario traces back to."
+   },
+   {
+    "title": "Build the Test Execution Sheet",
+    "time": "~5 min",
+    "description": "Compile everything into a structured test execution format ready for UAT testers.",
+    "prompt": "Combine all UAT scenarios into a test execution sheet with these columns:\n\n| Scenario ID | Requirement | Scenario Name | User Role | Preconditions | Steps | Expected Result | Pass/Fail | Tester | Date | Notes |\n\nAlso generate:\n1. A **UAT summary** — total scenarios, coverage by requirement, and any requirements with no test coverage\n2. **Entry criteria** — what must be true before UAT can begin\n3. **Exit criteria** — what defines a successful UAT round\n\nFormat the scenarios so they can be pasted directly into a spreadsheet."
+   }
+  ],
+  "whatYouNeed": [
+   "Approved requirements or user stories with acceptance criteria",
+   "Knowledge of the key user roles who will perform UAT",
+   "Any known business rules, edge cases, or constraints"
+  ],
+  "expectedOutput": "A complete UAT test suite with happy-path scenarios, edge cases, and a ready-to-use test execution sheet — traceable back to the original requirements.",
+  "remember": "Always remove confidential details before prompting. Review every AI output — you own the final deliverable."
+ }
+]

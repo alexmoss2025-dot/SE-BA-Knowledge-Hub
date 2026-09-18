@@ -1,0 +1,784 @@
+[
+ {
+  "slug": "project-discovery",
+  "header": {
+   "eyebrow": "Standard Operating Procedure",
+   "subtitle": "Discovery · Owned by BA Practice Lead"
+  },
+  "id": "BA-001",
+  "status": "Current",
+  "title": "Project Discovery and Intake",
+  "summary": "How a new request becomes a clearly framed, sponsored, and prioritized initiative before analysis work begins.",
+  "purpose": [
+   "This procedure gives the Moss Business Analysis team one consistent way to receive, evaluate, and log new requests. A disciplined intake protects our partners' time and ours: it confirms there is a real problem worth solving, names an accountable sponsor, and sets a shared understanding of scope before anyone commits hours. Clear is kind — framing the work honestly up front prevents rework, scope creep, and misaligned expectations later."
+  ],
+  "scope": {
+   "text": "Applies to every new request routed to the BA practice — process improvements, system enhancements, reporting needs, and net-new solutions across Construction Management and Solar business units. It covers the moment a request arrives through the go / no-go intake decision and initial logging.",
+   "outOfScope": [
+    "Detailed requirements elicitation (see <a href=\"/sop-library/requirements-elicitation\">Requirements Elicitation and Approval</a>).",
+    "Emergency field safety issues, which follow the site safety escalation path, not BA intake.",
+    "Pure IT support tickets with no analysis or process change involved."
+   ]
+  },
+  "roles": [
+   {
+    "role": "Requestor / Sponsor",
+    "responsibility": "Submits the request, states the business problem and desired outcome, and confirms they can fund and champion the work."
+   },
+   {
+    "role": "BA Practice Lead",
+    "responsibility": "Owns the intake queue, assigns an analyst, and makes the go / no-go recommendation."
+   },
+   {
+    "role": "Business Analyst",
+    "responsibility": "Runs the discovery conversation, drafts the intake summary, and logs the request."
+   },
+   {
+    "role": "Regional / Business Unit Leader",
+    "responsibility": "Confirms priority and sponsorship for larger initiatives and resolves competing demands."
+   },
+   {
+    "role": "PMO",
+    "responsibility": "Registers approved initiatives that meet the project threshold and links them to the portfolio."
+   }
+  ],
+  "trigger": {
+   "intro": "Start this procedure when any of the following happens:",
+   "items": [
+    "A stakeholder submits a request through the intake form, email, or a leadership conversation.",
+    "A recurring pain point surfaces in a retrospective, town hall, or process review.",
+    "A new system, tool, or regulatory change (for example, IRA compliance) creates a documented need.",
+    "A leader asks the BA team to assess feasibility of an idea before committing resources."
+   ]
+  },
+  "steps": [
+   {
+    "title": "Capture the request",
+    "bullets": [
+     "Record requestor, date, business unit, and a plain-language description of the ask.",
+     "Do not reword the problem into a solution yet — capture it in the requestor's own words first."
+    ]
+   },
+   {
+    "title": "Confirm the problem, not the solution",
+    "bullets": [
+     "Hold a short discovery conversation to separate the underlying problem from the requested fix.",
+     "Ask what outcome success would look like and who feels the pain today."
+    ]
+   },
+   {
+    "title": "Identify the sponsor and stakeholders",
+    "bullets": [
+     "Name the accountable sponsor who owns the outcome and can fund the work.",
+     "List primary stakeholders, SMEs, and affected end users. Use the Stakeholder Analysis Matrix if the group is large."
+    ]
+   },
+   {
+    "title": "Assess value, effort, and risk",
+    "bullets": [
+     "Estimate business value, rough effort (T-shirt size), urgency, and known risks or dependencies.",
+     "Flag anything that touches safety, compliance, or in-flight projects."
+    ]
+   },
+   {
+    "title": "Draft the intake summary",
+    "text": "Write a one-page summary: problem statement, desired outcome, sponsor, stakeholders, rough size, and any assumptions or constraints."
+   },
+   {
+    "title": "Make the go / no-go decision",
+    "bullets": [
+     "Review with the BA Practice Lead and, for larger asks, the business unit leader.",
+     "Decide: proceed to elicitation, park with a reason, redirect to another team, or decline with a clear rationale."
+    ]
+   },
+   {
+    "title": "Log and communicate",
+    "bullets": [
+     "Record the decision and rationale in the intake log and portfolio tracker.",
+     "Close the loop with the requestor the same week — whatever the answer, they hear it from us directly."
+    ]
+   }
+  ],
+  "inputs": [
+   "Intake request (form, email, or meeting notes)",
+   "Requestor and sponsor contact details",
+   "Any existing background docs, tickets, or prior analysis",
+   "Current portfolio and team capacity view"
+  ],
+  "outputs": [
+   "Completed one-page intake summary",
+   "Named sponsor and stakeholder list",
+   "Documented go / no-go decision and rationale",
+   "Logged entry in the intake / portfolio tracker"
+  ],
+  "related": [
+   {
+    "href": "/ba-templates",
+    "icon": "file-lines",
+    "title": "Stakeholder Analysis Matrix",
+    "sub": "Map sponsors, SMEs, and end users"
+   },
+   {
+    "href": "/ai-toolkit/workflows/stakeholder",
+    "icon": "wand-magic-sparkles",
+    "title": "Stakeholder Analysis Accelerator",
+    "sub": "AI-guided stakeholder mapping"
+   },
+   {
+    "href": "/ai-toolkit/prompts/interview-guide",
+    "icon": "comments",
+    "title": "Build an Interview Guide",
+    "sub": "Prep the discovery conversation"
+   },
+   {
+    "href": "/glossary",
+    "icon": "spell-check",
+    "title": "Project Glossary: Discovery, Business Case",
+    "sub": "Shared definitions"
+   }
+  ],
+  "history": [
+   {
+    "version": "2.1",
+    "date": "Apr. 2026",
+    "summary": "Added value / effort / risk screen and clarified go / no-go roles.",
+    "author": "BA Practice Lead"
+   },
+   {
+    "version": "2.0",
+    "date": "Nov. 2025",
+    "summary": "Reworked intake into a one-page summary format.",
+    "author": "Product Operations"
+   },
+   {
+    "version": "1.0",
+    "date": "Mar. 2025",
+    "summary": "Initial published procedure.",
+    "author": "BA Practice Lead"
+   }
+  ],
+  "glance": [
+   {
+    "label": "SOP ID",
+    "value": "BA-001"
+   },
+   {
+    "label": "Category",
+    "value": "Discovery"
+   },
+   {
+    "label": "Owner",
+    "value": "BA Practice Lead"
+   },
+   {
+    "label": "Status",
+    "value": "Current"
+   },
+   {
+    "label": "Version",
+    "value": "2.1"
+   },
+   {
+    "label": "Effective",
+    "value": "Apr. 2026"
+   },
+   {
+    "label": "Next Review",
+    "value": "Oct. 2026"
+   }
+  ],
+  "questions": "Contact the BA Practice Lead or use <strong>Submit an Update</strong> on the SOP Library to flag a gap."
+ },
+ {
+  "slug": "requirements-change-control",
+  "header": {
+   "eyebrow": "Standard Operating Procedure",
+   "subtitle": "Governance · Owned by PMO"
+  },
+  "id": "BA-007",
+  "status": "In Review",
+  "title": "Requirements Change Control",
+  "summary": "A lightweight, disciplined way to request, assess, decide, and document changes to already-approved requirements.",
+  "purpose": [
+   "Once requirements are baselined, changes are normal — but uncontrolled change is how scope creep, blown budgets, and broken trust happen. This procedure keeps change deliberate: every request is logged, its impact is understood before a decision, and the outcome is documented and communicated. It is intentionally lightweight so it protects the work without slowing good ideas down."
+  ],
+  "scope": {
+   "text": "Applies to any proposed change to requirements that have already been approved and baselined under <a href=\"/sop-library/requirements-elicitation\">Requirements Elicitation and Approval</a>, for initiatives in analysis, build, or testing.",
+   "outOfScope": [
+    "Refinements made before requirements are baselined (handle within elicitation).",
+    "Defects — a solution not meeting an approved requirement is a defect, tracked in <a href=\"/sop-library/uat-planning\">UAT Planning and Execution</a>, not a change.",
+    "Minor clarifications with no impact on scope, effort, cost, or timeline (log for traceability, no board review)."
+   ]
+  },
+  "roles": [
+   {
+    "role": "Requestor",
+    "responsibility": "Raises the change, explains the business reason, and states the desired outcome."
+   },
+   {
+    "role": "Business Analyst",
+    "responsibility": "Logs the request, performs impact analysis, and presents options and a recommendation."
+   },
+   {
+    "role": "Sponsor",
+    "responsibility": "Approves or rejects changes within their authority and funds approved changes."
+   },
+   {
+    "role": "Change Control Board (CCB)",
+    "responsibility": "Reviews changes above the sponsor threshold and decides approve / reject / defer."
+   },
+   {
+    "role": "Delivery Lead / Product Owner",
+    "responsibility": "Confirms effort and re-plans work for approved changes."
+   },
+   {
+    "role": "PMO",
+    "responsibility": "Owns this procedure, the change log, and reporting on change volume and trends."
+   }
+  ],
+  "trigger": {
+   "intro": "Start when a change to baselined requirements is proposed, such as:",
+   "items": [
+    "A stakeholder requests new, modified, or removed functionality.",
+    "A regulatory, policy, or business-priority shift alters what is needed.",
+    "Discovery during build or testing reveals a required requirement was missed or is wrong.",
+    "A dependency or constraint changes and forces a scope adjustment."
+   ]
+  },
+  "steps": [
+   {
+    "title": "Submit the change request",
+    "bullets": [
+     "Capture the change on a Change Request (CR): requestor, description, business justification, and desired date.",
+     "Assign a unique CR ID and log it in the change register."
+    ]
+   },
+   {
+    "title": "Do a first-pass triage",
+    "bullets": [
+     "Confirm it is a genuine change to a baselined requirement, not a defect or pre-baseline refinement.",
+     "Reject or redirect out-of-scope items early, with a clear reason."
+    ]
+   },
+   {
+    "title": "Perform impact analysis",
+    "bullets": [
+     "Assess impact on scope, requirements, effort, cost, timeline, risk, and other stakeholders.",
+     "Identify affected requirements via the Requirements Traceability Matrix.",
+     "Prepare options where possible (for example: do now, defer to a later phase, or decline) with a recommendation."
+    ]
+   },
+   {
+    "title": "Route to the right decision level",
+    "bullets": [
+     "Low-impact changes within authority go to the sponsor.",
+     "Higher-impact changes go to the Change Control Board.",
+     "Match the rigor to the size of the change — do not over-govern small asks."
+    ]
+   },
+   {
+    "title": "Decide",
+    "bullets": [
+     "The sponsor or CCB decides approve, reject, or defer.",
+     "Record the decision, rationale, and any conditions on the CR."
+    ]
+   },
+   {
+    "title": "Update and re-baseline",
+    "bullets": [
+     "For approved changes, update the requirements, tracker, and traceability matrix, and re-baseline.",
+     "Re-plan affected work and confirm downstream impacts (design, build, test)."
+    ]
+   },
+   {
+    "title": "Communicate and close",
+    "bullets": [
+     "Notify the requestor and affected stakeholders of the outcome, whatever it is.",
+     "Close the CR in the register and keep the audit trail intact."
+    ]
+   }
+  ],
+  "inputs": [
+   "Baselined requirements and traceability matrix",
+   "Submitted Change Request (CR)",
+   "Current schedule, budget, and delivery plan",
+   "Sponsor / CCB decision thresholds"
+  ],
+  "outputs": [
+   "Logged and triaged CR with impact analysis",
+   "Documented approve / reject / defer decision and rationale",
+   "Updated, re-baselined requirements and tracker",
+   "Stakeholder communication and closed audit trail"
+  ],
+  "related": [
+   {
+    "href": "/ba-templates",
+    "icon": "file-excel",
+    "title": "Master Requirements Trackers",
+    "sub": "Source of truth for requirements"
+   },
+   {
+    "href": "/ba-templates",
+    "icon": "file-excel",
+    "title": "Requirements Traceability Matrix",
+    "sub": "Find affected requirements"
+   },
+   {
+    "href": "/sop-library/requirements-elicitation",
+    "icon": "book",
+    "title": "Requirements Elicitation and Approval",
+    "sub": "How baselines are set"
+   },
+   {
+    "href": "/glossary",
+    "icon": "spell-check",
+    "title": "Project Glossary: CR, CCB, Impact Assessment, Scope Creep",
+    "sub": "Shared definitions"
+   }
+  ],
+  "history": [
+   {
+    "version": "1.4",
+    "date": "Feb. 2026",
+    "summary": "Clarified defect-vs-change boundary; added tiered decision thresholds. Currently in review.",
+    "author": "PMO"
+   },
+   {
+    "version": "1.2",
+    "date": "Sep. 2025",
+    "summary": "Added impact-analysis options and recommendation step.",
+    "author": "PMO"
+   },
+   {
+    "version": "1.0",
+    "date": "Apr. 2025",
+    "summary": "Initial published procedure.",
+    "author": "Product Operations"
+   }
+  ],
+  "glance": [
+   {
+    "label": "SOP ID",
+    "value": "BA-007"
+   },
+   {
+    "label": "Category",
+    "value": "Governance"
+   },
+   {
+    "label": "Owner",
+    "value": "PMO"
+   },
+   {
+    "label": "Status",
+    "value": "In Review"
+   },
+   {
+    "label": "Version",
+    "value": "1.4"
+   },
+   {
+    "label": "Effective",
+    "value": "Feb. 2026"
+   },
+   {
+    "label": "Next Review",
+    "value": "Aug. 2026"
+   }
+  ],
+  "questions": "Contact the PMO or use <strong>Submit an Update</strong> on the SOP Library to flag a gap."
+ },
+ {
+  "slug": "requirements-elicitation",
+  "header": {
+   "eyebrow": "Standard Operating Procedure",
+   "subtitle": "Requirements · Owned by Product Operations"
+  },
+  "id": "BA-004",
+  "status": "Current",
+  "title": "Requirements Elicitation and Approval",
+  "summary": "How we plan elicitation, gather and document requirements, validate them with stakeholders, and secure formal approval.",
+  "purpose": [
+   "This procedure defines how the BA team turns a framed initiative into clear, testable, agreed-upon requirements. Good requirements are the contract between what stakeholders need and what gets built. Doing this well — documenting plainly, validating openly, and getting an explicit decision — is how we deliver exactly what we sell and finish better friends than when we started."
+  ],
+  "scope": {
+   "text": "Applies to requirements work for any initiative that has cleared intake, across both business units. Covers elicitation planning, the elicitation sessions themselves, documentation, validation, and the formal approval that baselines the requirements.",
+   "outOfScope": [
+    "Intake and problem framing (see <a href=\"/sop-library/project-discovery\">Project Discovery and Intake</a>).",
+    "Changes to requirements after baseline (see <a href=\"/sop-library/requirements-change-control\">Requirements Change Control</a>).",
+    "Solution design and build decisions owned by delivery teams."
+   ]
+  },
+  "roles": [
+   {
+    "role": "Business Analyst",
+    "responsibility": "Plans and facilitates elicitation, documents requirements, and drives them to approval."
+   },
+   {
+    "role": "Sponsor",
+    "responsibility": "Confirms scope, resolves conflicting priorities, and provides final approval."
+   },
+   {
+    "role": "Subject Matter Experts",
+    "responsibility": "Supply process detail, validate accuracy, and confirm feasibility."
+   },
+   {
+    "role": "End Users",
+    "responsibility": "Describe real-world needs and review requirements for usefulness and clarity."
+   },
+   {
+    "role": "Product Owner / Delivery Lead",
+    "responsibility": "Reviews requirements for buildability and helps prioritize the backlog."
+   },
+   {
+    "role": "Approvers",
+    "responsibility": "Named decision-makers who formally sign off and baseline the requirements."
+   }
+  ],
+  "trigger": {
+   "intro": "Begin when an initiative has a completed intake summary and a confirmed sponsor, and any of the following is true:",
+   "items": [
+    "Discovery has established a problem worth solving and work is authorized to proceed.",
+    "A new phase or release needs its requirements defined or refined.",
+    "A prior effort's requirements are incomplete, ambiguous, or out of date and must be re-established."
+   ]
+  },
+  "steps": [
+   {
+    "title": "Plan the elicitation",
+    "bullets": [
+     "Confirm objectives, stakeholders, and the techniques you'll use (interviews, workshops / JAD, observation, document review).",
+     "Prepare an interview or workshop guide and schedule sessions with the right people."
+    ]
+   },
+   {
+    "title": "Elicit the requirements",
+    "bullets": [
+     "Facilitate sessions to draw out business, functional, and non-functional needs.",
+     "Capture assumptions, constraints, dependencies, and open questions as you go.",
+     "Listen for the 'why' behind each ask so requirements stay outcome-driven."
+    ]
+   },
+   {
+    "title": "Document clearly",
+    "bullets": [
+     "Record requirements in the agreed format — BRD, user stories with acceptance criteria, or both.",
+     "Write each requirement so it is clear, testable, and traceable. One need per statement.",
+     "Log every requirement in the Master Requirements Tracker with a unique ID."
+    ]
+   },
+   {
+    "title": "Analyze and prioritize",
+    "bullets": [
+     "Check for conflicts, gaps, and duplicates; run a gap analysis against current state.",
+     "Prioritize with the sponsor (for example MoSCoW) and confirm what is in and out of scope."
+    ]
+   },
+   {
+    "title": "Validate with stakeholders",
+    "bullets": [
+     "Walk stakeholders and SMEs through the documented requirements.",
+     "Stress-test clarity and testability — the Challenge Requirement Quality prompt helps here.",
+     "Update the documentation and resolve or log open items."
+    ]
+   },
+   {
+    "title": "Secure formal approval",
+    "bullets": [
+     "Present the baseline set to the named approvers.",
+     "Capture explicit sign-off (who, what, when) and note any conditions.",
+     "Baseline the approved requirements — from here, changes follow Requirements Change Control."
+    ]
+   },
+   {
+    "title": "Establish traceability",
+    "text": "Link approved requirements into the Requirements Traceability Matrix so they can be tracked through design, build, and testing."
+   }
+  ],
+  "inputs": [
+   "Approved intake summary and sponsor",
+   "Stakeholder and SME availability",
+   "Existing process maps, systems, and documentation",
+   "Interview / workshop guides and templates"
+  ],
+  "outputs": [
+   "Documented requirements (BRD and/or user stories with acceptance criteria)",
+   "Updated Master Requirements Tracker with unique IDs",
+   "Recorded stakeholder validation and open-item log",
+   "Formal approval / baseline and traceability links"
+  ],
+  "related": [
+   {
+    "href": "/ba-templates",
+    "icon": "file-word",
+    "title": "Business Requirements Document",
+    "sub": "Objectives, scope, requirements"
+   },
+   {
+    "href": "/ba-templates",
+    "icon": "file-lines",
+    "title": "User Story & Acceptance Criteria",
+    "sub": "Agile requirement format"
+   },
+   {
+    "href": "/ba-templates",
+    "icon": "file-excel",
+    "title": "Requirements Traceability Matrix",
+    "sub": "Track requirements end to end"
+   },
+   {
+    "href": "/ai-toolkit/prompts/requirement-quality",
+    "icon": "wand-magic-sparkles",
+    "title": "Challenge Requirement Quality",
+    "sub": "Stress-test clarity & testability"
+   }
+  ],
+  "history": [
+   {
+    "version": "3.0",
+    "date": "May 2026",
+    "summary": "Split approval into explicit baseline step; added traceability requirement.",
+    "author": "Product Operations"
+   },
+   {
+    "version": "2.2",
+    "date": "Dec. 2025",
+    "summary": "Added acceptance-criteria and prioritization guidance.",
+    "author": "Product Operations"
+   },
+   {
+    "version": "1.0",
+    "date": "Feb. 2025",
+    "summary": "Initial published procedure.",
+    "author": "BA Practice Lead"
+   }
+  ],
+  "glance": [
+   {
+    "label": "SOP ID",
+    "value": "BA-004"
+   },
+   {
+    "label": "Category",
+    "value": "Requirements"
+   },
+   {
+    "label": "Owner",
+    "value": "Product Operations"
+   },
+   {
+    "label": "Status",
+    "value": "Current"
+   },
+   {
+    "label": "Version",
+    "value": "3.0"
+   },
+   {
+    "label": "Effective",
+    "value": "May 2026"
+   },
+   {
+    "label": "Next Review",
+    "value": "Nov. 2026"
+   }
+  ],
+  "questions": "Contact the Product Operations or use <strong>Submit an Update</strong> on the SOP Library to flag a gap."
+ },
+ {
+  "slug": "uat-planning",
+  "header": {
+   "eyebrow": "Standard Operating Procedure",
+   "subtitle": "Testing · Owned by Quality Team"
+  },
+  "id": "BA-011",
+  "status": "Current",
+  "title": "UAT Planning and Execution",
+  "summary": "How we plan User Acceptance Testing, prepare scenarios, run execution with real users, log defects, and secure sign-off.",
+  "purpose": [
+   "User Acceptance Testing is where business users confirm that what we built actually meets the approved requirements and works in the real world. This procedure makes UAT organized and fair: coverage is planned, the right users are engaged, defects are captured consistently, and go-live rests on an explicit, documented sign-off — not a hopeful assumption."
+  ],
+  "scope": {
+   "text": "Applies to UAT for any solution or process change delivered through the BA practice, across both business units. Covers UAT planning, test scenario and case preparation, execution, defect management, and final acceptance sign-off.",
+   "outOfScope": [
+    "Unit, integration, and system testing performed by the delivery team before UAT.",
+    "Requirements definition (see <a href=\"/sop-library/requirements-elicitation\">Requirements Elicitation and Approval</a>).",
+    "Post go-live hypercare and production support activities."
+   ]
+  },
+  "roles": [
+   {
+    "role": "Business Analyst",
+    "responsibility": "Plans UAT, builds scenarios from requirements, coordinates users, and tracks defects to closure."
+   },
+   {
+    "role": "UAT Testers (End Users)",
+    "responsibility": "Execute test scenarios, report results honestly, and confirm the solution fits how they work."
+   },
+   {
+    "role": "Sponsor / Business Owner",
+    "responsibility": "Confirms readiness, weighs open defects, and provides final acceptance sign-off."
+   },
+   {
+    "role": "Delivery / Development Team",
+    "responsibility": "Fixes defects, deploys to the UAT environment, and confirms resolutions."
+   },
+   {
+    "role": "Quality Team",
+    "responsibility": "Owns this procedure and UAT standards, and reviews entry / exit criteria."
+   }
+  ],
+  "trigger": {
+   "intro": "Begin UAT planning when:",
+   "items": [
+    "Requirements are baselined and the solution has passed system / integration testing.",
+    "A UAT environment and representative test data are available.",
+    "A release or go-live date is targeted and business validation is required before launch."
+   ]
+  },
+  "steps": [
+   {
+    "title": "Plan UAT",
+    "bullets": [
+     "Define objectives, scope, entry and exit criteria, timeline, and the UAT environment.",
+     "Identify and confirm the right business testers and their availability.",
+     "Agree what 'acceptable' looks like, including defect severity definitions."
+    ]
+   },
+   {
+    "title": "Prepare scenarios and test cases",
+    "bullets": [
+     "Derive scenarios from approved requirements and acceptance criteria — cover happy paths, edge cases, and key exceptions.",
+     "Write each test case with clear steps, test data, and expected results in the UAT Test Script Workbook.",
+     "Trace scenarios back to requirements so coverage is verifiable. The UAT Scenario Builder can accelerate drafting."
+    ]
+   },
+   {
+    "title": "Confirm readiness",
+    "bullets": [
+     "Verify the environment, data, and access are ready and testers are briefed.",
+     "Hold a short kickoff so testers know how to execute cases and log defects."
+    ]
+   },
+   {
+    "title": "Execute testing",
+    "bullets": [
+     "Testers run cases and mark each pass or fail against the expected result.",
+     "The BA monitors progress, unblocks testers, and keeps daily visibility on coverage and status."
+    ]
+   },
+   {
+    "title": "Log and triage defects",
+    "bullets": [
+     "Record each defect with steps to reproduce, severity, and evidence (screenshots).",
+     "Triage severity with the delivery team and prioritize fixes.",
+     "Distinguish true defects from change requests — new asks route to Requirements Change Control."
+    ]
+   },
+   {
+    "title": "Retest and confirm fixes",
+    "bullets": [
+     "Retest resolved defects and update case status.",
+     "Track open defects against exit criteria and keep the sponsor informed."
+    ]
+   },
+   {
+    "title": "Obtain sign-off",
+    "bullets": [
+     "Review results, coverage, and any remaining defects with the sponsor / business owner.",
+     "Capture explicit, documented acceptance sign-off (who, what, when) as the basis for go-live.",
+     "Hand any deferred items to release notes or hypercare with owners and dates."
+    ]
+   }
+  ],
+  "inputs": [
+   "Baselined requirements and acceptance criteria",
+   "System-tested solution in a UAT environment",
+   "Representative test data and user access",
+   "Confirmed UAT testers and schedule"
+  ],
+  "outputs": [
+   "UAT plan with entry / exit criteria",
+   "Test scenarios and executed test cases with results",
+   "Defect log with severities and resolution status",
+   "Documented acceptance sign-off and deferred-item list"
+  ],
+  "related": [
+   {
+    "href": "/ba-templates",
+    "icon": "file-excel",
+    "title": "UAT Test Script Workbook",
+    "sub": "Scenarios, cases, and results"
+   },
+   {
+    "href": "/ai-toolkit/workflows/uat",
+    "icon": "wand-magic-sparkles",
+    "title": "UAT Scenario Builder",
+    "sub": "AI-guided scenario drafting"
+   },
+   {
+    "href": "/ba-templates",
+    "icon": "file-excel",
+    "title": "Requirements Traceability Matrix",
+    "sub": "Confirm test coverage"
+   },
+   {
+    "href": "/glossary",
+    "icon": "spell-check",
+    "title": "Project Glossary: UAT, Test Case, Defect, Go-Live",
+    "sub": "Shared definitions"
+   }
+  ],
+  "history": [
+   {
+    "version": "2.3",
+    "date": "Jul. 2026",
+    "summary": "Added defect-vs-change guidance and deferred-item handoff to hypercare.",
+    "author": "Quality Team"
+   },
+   {
+    "version": "2.0",
+    "date": "Jan. 2026",
+    "summary": "Introduced entry / exit criteria and traceable scenario coverage.",
+    "author": "Quality Team"
+   },
+   {
+    "version": "1.0",
+    "date": "May 2025",
+    "summary": "Initial published procedure.",
+    "author": "BA Practice Lead"
+   }
+  ],
+  "glance": [
+   {
+    "label": "SOP ID",
+    "value": "BA-011"
+   },
+   {
+    "label": "Category",
+    "value": "Testing"
+   },
+   {
+    "label": "Owner",
+    "value": "Quality Team"
+   },
+   {
+    "label": "Status",
+    "value": "Current"
+   },
+   {
+    "label": "Version",
+    "value": "2.3"
+   },
+   {
+    "label": "Effective",
+    "value": "Jul. 2026"
+   },
+   {
+    "label": "Next Review",
+    "value": "Jan. 2027"
+   }
+  ],
+  "questions": "Contact the Quality Team or use <strong>Submit an Update</strong> on the SOP Library to flag a gap."
+ }
+]

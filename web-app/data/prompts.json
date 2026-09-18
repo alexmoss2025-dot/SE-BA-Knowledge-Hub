@@ -1,0 +1,122 @@
+[
+ {
+  "slug": "decisions-actions",
+  "header": {
+   "eyebrow": "AI Toolkit",
+   "subtitle": "Prompt Starter — Meetings"
+  },
+  "category": "Meetings",
+  "title": "Structure Decisions and Actions",
+  "lede": "Use this prompt to turn raw meeting notes into a clean, structured record. MossAIc extracts decisions, owners, due dates, risks, open questions, and follow-ups — so nothing falls through the cracks after the meeting ends.",
+  "steps": [
+   {
+    "title": "Capture your notes",
+    "text": "During or after the meeting, jot down notes in whatever format works — bullet points, free text, or even a transcript."
+   },
+   {
+    "title": "Remove confidential details",
+    "text": "Before pasting into MossAIc, redact any sensitive information (personal data, financials, NDA-covered content)."
+   },
+   {
+    "title": "Run the prompt",
+    "text": "Paste the prompt below into MossAIc along with your meeting notes."
+   },
+   {
+    "title": "Distribute the output",
+    "text": "Review the structured output, make corrections, and share with attendees for confirmation."
+   }
+  ],
+  "prompt": "You are an experienced Business Analyst processing meeting notes.\n\nMeeting notes:\n[Paste your raw meeting notes here]\n\nExtract and organize the following into a clean, structured format:\n\n1. **Decisions Made** — Each decision with a brief rationale\n2. **Action Items** — Each with: description, owner, due date (or \"TBD\" if not stated)\n3. **Risks Identified** — Any risks, concerns, or blockers mentioned\n4. **Open Questions** — Unresolved items that need follow-up\n5. **Parking Lot** — Topics raised but deferred to a future discussion\n6. **Key Discussion Points** — Brief summary of major topics covered\n\nUse a table for action items. Flag any decisions that seem to lack an owner or where the notes are ambiguous.",
+  "whenToUse": [
+   "You have rough meeting notes and need to extract clear outcomes",
+   "You want to ensure every decision has an owner and due date",
+   "You need to surface risks, open questions, and follow-ups quickly"
+  ],
+  "proTips": [
+   "Run this immediately after the meeting while context is fresh",
+   "If using a transcript, trim filler and off-topic sections first for cleaner results",
+   "Pair with your team's standard meeting-minutes template for consistency"
+  ],
+  "remember": "Always remove confidential details before prompting. Review every AI output — you own the final deliverable."
+ },
+ {
+  "slug": "interview-guide",
+  "header": {
+   "eyebrow": "AI Toolkit",
+   "subtitle": "Prompt Starter — Discovery"
+  },
+  "category": "Discovery",
+  "title": "Build an Interview Guide",
+  "lede": "Use this prompt to turn a discovery objective into a focused, well-sequenced stakeholder interview guide. It produces open questions grouped by theme so you can uncover goals, pain points, decisions, and success measures without leading the interviewee.",
+  "steps": [
+   {
+    "title": "Define your objective",
+    "text": "Write a clear one-sentence discovery goal. Example: <em>“Understand how the field team currently tracks equipment inspections and where the process breaks down.”</em>"
+   },
+   {
+    "title": "List what you already know",
+    "text": "Note any context — systems involved, team names, known pain points — so the prompt can tailor questions rather than repeat obvious ground."
+   },
+   {
+    "title": "Run the prompt",
+    "text": "Paste the prompt below into MossAIc, fill in the bracketed placeholders, and submit."
+   },
+   {
+    "title": "Review & refine",
+    "text": "Check the generated questions. Remove duplicates, reorder for conversation flow, and add follow-ups specific to your stakeholder."
+   }
+  ],
+  "prompt": "You are an experienced Business Analyst preparing for a stakeholder interview.\n\nObjective: [Describe the discovery goal in one sentence]\nContext: [List known systems, teams, pain points, or constraints]\nStakeholder role: [Title and area of responsibility]\n\nGenerate a structured interview guide with:\n1. Opening questions (rapport and role context)\n2. Current-state questions (process, tools, data)\n3. Pain-point questions (friction, workarounds, risks)\n4. Future-state questions (goals, success measures, priorities)\n5. Closing questions (anything missed, next steps)\n\nUse open-ended questions. Avoid leading or yes/no questions. Group by theme and include 3-5 questions per section.",
+  "whenToUse": [
+   "You are preparing for a stakeholder interview and need focused questions",
+   "You want to ensure consistent coverage across multiple interviews",
+   "You need to uncover goals, pain points, and success measures systematically"
+  ],
+  "proTips": [
+   "Swap in the stakeholder's actual title for more relevant questions",
+   "Run it once per stakeholder role to create tailored guides",
+   "After the interview, paste your notes back into MossAIc and ask it to extract key themes"
+  ],
+  "remember": "Always remove confidential details before prompting. Review every AI output — you own the final deliverable."
+ },
+ {
+  "slug": "requirement-quality",
+  "header": {
+   "eyebrow": "AI Toolkit",
+   "subtitle": "Prompt Starter — Requirements"
+  },
+  "category": "Requirements",
+  "title": "Challenge Requirement Quality",
+  "lede": "Use this prompt as a second set of eyes on a draft requirement or user story. MossAIc checks for ambiguity, testability, hidden assumptions, and missing edge cases — helping you strengthen the requirement before it reaches development.",
+  "steps": [
+   {
+    "title": "Draft your requirement",
+    "text": "Write the requirement or user story in your usual format. Include acceptance criteria if you have them."
+   },
+   {
+    "title": "Run the prompt",
+    "text": "Paste the prompt below into MossAIc with your draft requirement in the placeholder."
+   },
+   {
+    "title": "Review the analysis",
+    "text": "MossAIc will flag issues across several quality dimensions. Not every flag will apply — use your judgment."
+   },
+   {
+    "title": "Revise and re-check",
+    "text": "Update the requirement based on valid flags, then optionally re-run for a second pass."
+   }
+  ],
+  "prompt": "You are a senior Business Analyst reviewing a draft requirement for quality.\n\nRequirement:\n[Paste the full requirement or user story here, including any acceptance criteria]\n\nAnalyze this requirement against these quality dimensions:\n1. **Clarity** — Is the language unambiguous? Flag vague terms (e.g., \"quickly\", \"user-friendly\", \"appropriate\").\n2. **Completeness** — Are there missing details, undefined actors, or unspecified triggers?\n3. **Testability** — Can each statement be verified with a concrete test? Suggest test conditions where missing.\n4. **Assumptions** — What hidden assumptions does this requirement make? List them explicitly.\n5. **Edge cases** — What boundary conditions, error states, or exception paths are not addressed?\n6. **Conflicts** — Does anything contradict common patterns or other stated criteria?\n\nFor each issue found, state the problem, quote the problematic text, and suggest a specific revision.",
+  "whenToUse": [
+   "You have drafted requirements and want a quality check before review",
+   "You need to catch ambiguity, assumptions, and missing edge cases",
+   "You want to verify requirements are testable and measurable"
+  ],
+  "proTips": [
+   "Batch multiple requirements in one prompt for efficiency",
+   "Use the output as a discussion starter with your product owner, not as a final verdict",
+   "Re-run after revisions to confirm the flags are resolved"
+  ],
+  "remember": "Always remove confidential details before prompting. Review every AI output — you own the final deliverable."
+ }
+]

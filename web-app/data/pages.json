@@ -1,0 +1,163 @@
+[
+ {
+  "url": "ba-templates.html",
+  "title": "BA Templates",
+  "section": "Templates",
+  "desc": "Standardized templates for BRDs, requirements, user stories, and traceability.",
+  "kw": "brd business requirements document rtm traceability matrix master requirements trackers user story template download featured"
+ },
+ {
+  "url": "sop-library.html",
+  "title": "SOP Library",
+  "section": "SOPs",
+  "desc": "Standard operating procedures for consistent BA delivery.",
+  "kw": "sop standard operating procedure process standards documentation library"
+ },
+ {
+  "url": "sop-project-discovery.html",
+  "title": "Project Discovery and Intake",
+  "section": "SOP \u00b7 BA-001",
+  "desc": "How to assess requests, define the problem, and establish sponsorship.",
+  "kw": "sop ba-001 discovery intake request sponsor problem statement stakeholder go no-go business case new project engagement"
+ },
+ {
+  "url": "sop-requirements-elicitation.html",
+  "title": "Requirements Elicitation and Approval",
+  "section": "SOP \u00b7 BA-004",
+  "desc": "Plan, document, validate, and secure decisions on business requirements.",
+  "kw": "sop ba-004 requirements elicitation gathering brd user story acceptance criteria approval baseline traceability workshop interview validate"
+ },
+ {
+  "url": "sop-requirements-change-control.html",
+  "title": "Requirements Change Control",
+  "section": "SOP \u00b7 BA-007",
+  "desc": "Evaluate scope, impact, ownership, and approval of requested changes.",
+  "kw": "sop ba-007 change control change request cr impact analysis ccb scope creep governance re-baseline approval defer"
+ },
+ {
+  "url": "sop-uat-planning.html",
+  "title": "UAT Planning and Execution",
+  "section": "SOP \u00b7 BA-011",
+  "desc": "Prepare test coverage, coordinate users, capture defects, and obtain sign-off.",
+  "kw": "sop ba-011 uat user acceptance testing test cases scenarios defects sign-off go-live entry exit criteria quality"
+ },
+ {
+  "url": "onboarding-center.html",
+  "title": "Onboarding Center \u2014 Overview",
+  "section": "Onboarding",
+  "desc": "Welcome to Moss: culture, values, the BA role, and key stakeholders.",
+  "kw": "welcome new hire orientation culture values principles stakeholders ba role moss handbook onboarding"
+ },
+ {
+  "url": "onboarding-roadmap.html",
+  "title": "30/60/90 Day Roadmap",
+  "section": "Onboarding",
+  "desc": "Learn, contribute, own \u2014 your first 90 days at Moss.",
+  "kw": "30 60 90 roadmap first days learn contribute own phases onboarding plan"
+ },
+ {
+  "url": "onboarding-toolkit.html",
+  "title": "Toolkit & Guidelines",
+  "section": "Onboarding",
+  "desc": "BA methods at Moss, decision layers, approved terminology, and non-negotiables.",
+  "kw": "methods decision layers terminology jobsite trade partner safety promise non-negotiables communication onboarding toolkit guidelines"
+ },
+ {
+  "url": "onboarding-resources.html",
+  "title": "Resources & Contacts",
+  "section": "Onboarding",
+  "desc": "Key contacts, system access, and the process discovery interview guide.",
+  "kw": "contacts systems access interview guide appendix questions discovery onboarding resources"
+ },
+ {
+  "url": "process-maps.html",
+  "title": "Process Maps",
+  "section": "Process",
+  "desc": "Visual maps of core business processes and workflows.",
+  "kw": "process map workflow swimlane diagram flow visual current state future state mapping"
+ },
+ {
+  "url": "process-map-request-intake.html",
+  "title": "Business Request Intake to Prioritization",
+  "section": "Process Map",
+  "desc": "How requests move through evaluation, scoring, and prioritization into the roadmap.",
+  "kw": "intake prioritization request scoring committee roadmap backlog business request portfolio"
+ },
+ {
+  "url": "process-map-change-control.html",
+  "title": "Requirements Change Control",
+  "section": "Process Map",
+  "desc": "Change request workflow from submission through impact analysis and approval.",
+  "kw": "change control change request impact analysis ccb approval governance baseline scope"
+ },
+ {
+  "url": "process-map-uat.html",
+  "title": "UAT Planning and Signoff",
+  "section": "Process Map",
+  "desc": "UAT lifecycle from planning through test execution and stakeholder signoff.",
+  "kw": "uat user acceptance testing test cases scenarios signoff defects quality go-live"
+ },
+ {
+  "url": "process-map-system-access.html",
+  "title": "System Access Request",
+  "section": "Process Map",
+  "desc": "How BAs request system access from submission through provisioning.",
+  "kw": "access request system access permissions security provisioning approval iam"
+ },
+ {
+  "url": "ai-toolkit.html",
+  "title": "AI Toolkit",
+  "section": "AI",
+  "desc": "MossAIc prompts, responsible-use guidance, and guided AI workflows.",
+  "kw": "ai artificial intelligence mossaic prompts workflows responsible use toolkit"
+ },
+ {
+  "url": "ai-prompt-interview-guide.html",
+  "title": "Build an Interview Guide",
+  "section": "AI \u00b7 Prompt Starter",
+  "desc": "Prompt starter for generating stakeholder interview guides.",
+  "kw": "interview guide prompt starter stakeholder questions elicitation discovery ai"
+ },
+ {
+  "url": "ai-prompt-requirement-quality.html",
+  "title": "Challenge Requirement Quality",
+  "section": "AI \u00b7 Prompt Starter",
+  "desc": "Prompt starter for stress-testing requirement clarity and testability.",
+  "kw": "requirement quality testable clear ambiguous prompt starter review ai"
+ },
+ {
+  "url": "ai-prompt-decisions-actions.html",
+  "title": "Structure Decisions and Actions",
+  "section": "AI \u00b7 Prompt Starter",
+  "desc": "Prompt starter for turning meeting notes into decisions and action items.",
+  "kw": "decisions actions meeting notes minutes follow up prompt starter ai"
+ },
+ {
+  "url": "ai-workflow-stakeholder.html",
+  "title": "Stakeholder Analysis Accelerator",
+  "section": "AI \u00b7 Workflow",
+  "desc": "Guided workflow for mapping and analyzing stakeholders.",
+  "kw": "stakeholder analysis mapping accelerator workflow influence interest ai"
+ },
+ {
+  "url": "ai-workflow-process-discovery.html",
+  "title": "Process Discovery Synthesizer",
+  "section": "AI \u00b7 Workflow",
+  "desc": "Guided workflow for synthesizing process discovery findings.",
+  "kw": "process discovery synthesis interviews current state workflow pain points ai"
+ },
+ {
+  "url": "ai-workflow-uat.html",
+  "title": "UAT Scenario Builder",
+  "section": "AI \u00b7 Workflow",
+  "desc": "Guided workflow for building UAT test scenarios from requirements.",
+  "kw": "uat user acceptance testing scenarios test cases workflow validation ai"
+ },
+ {
+  "url": "project-glossary.html",
+  "title": "Project Glossary",
+  "section": "Glossary",
+  "desc": "76 searchable terms and definitions, filterable by category.",
+  "kw": "glossary terms definitions vocabulary acronyms dictionary"
+ }
+]
